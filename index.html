@@ -1,0 +1,1080 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Restaurante Chino Hong Kong · Móstoles · Reservas</title>
+<meta name="description" content="Reserva mesa en el Restaurante Chino Hong Kong, Av. Carlos V 41, Móstoles. Comida en el local, para llevar y a domicilio. Teléfono 916 46 04 38.">
+<meta name="theme-color" content="#EAD5B3">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%23A5121C%27/%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%278%27 fill=%27%23F1E4CF%27/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&display=swap&text=%E9%A6%99%E6%B8%AF%E6%8F%9A%E5%B7%9E%E7%82%92%E9%A3%AF%E6%AA%B8%E6%AA%AC%E9%9B%9E%E6%98%A5%E6%8D%B2%E9%BA%B5%E7%89%9B%E8%82%89%E8%9D%A6%E9%8D%8B%E5%B7%B4" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Restaurante Chino Hong Kong",
+  "servesCuisine": "China",
+  "telephone": "+34916460438",
+  "priceRange": "10-20 €",
+  "address": {"@type": "PostalAddress", "streetAddress": "Av. Carlos V, 41", "addressLocality": "Móstoles", "addressRegion": "Madrid", "addressCountry": "ES"},
+  "acceptsReservations": true
+}
+</script>
+<style>
+:root {
+  --ground: #EAD5B3;        /* piel de las sillas */
+  --ground-2: #E0C8A2;
+  --cloth: #FCF9F3;         /* mantel */
+  --ink: #2A1A12;           /* madera oscura */
+  --ink-2: #5E4636;
+  --red: #A5121C;           /* bajomantel */
+  --red-deep: #6F0910;      /* solo la elección activa */
+  --line: rgba(42, 26, 18, .14);
+  --ease: cubic-bezier(.23, 1, .32, 1);
+  --ease-io: cubic-bezier(.77, 0, .175, 1);
+  --pad: clamp(20px, 5vw, 64px);
+  --maxw: 1240px;
+  --nav: 60px;
+  color-scheme: light;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 76px; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0; background: var(--ground); color: var(--ink);
+  font-family: "Onest", ui-sans-serif, system-ui, sans-serif; font-size: 17px; line-height: 1.5;
+  -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+::selection { background: var(--red); color: #fff; }
+:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; border-radius: 10px; }
+a { color: inherit; text-underline-offset: .2em; text-decoration-thickness: 1px; }
+svg { display: block; max-width: 100%; }
+h1, h2, h3 { margin: 0; font-weight: 700; letter-spacing: -.035em; line-height: 1.04; text-wrap: balance; }
+p { margin: 0; text-wrap: pretty; }
+.hanzi { font-family: "Noto Serif TC", serif; font-weight: 700; letter-spacing: .02em; }
+.wrap { width: 100%; max-width: var(--maxw); margin-inline: auto; padding-inline: var(--pad); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.num { font-variant-numeric: tabular-nums; }
+.ico { color: var(--ink-2); }
+
+/* ---------- Cristal (aproximación web al cristal de Apple: blur + bordes y brillos en capas) ---------- */
+.glass {
+  position: relative; isolation: isolate;
+  background: linear-gradient(140deg, rgba(255, 252, 246, .42), rgba(255, 248, 236, .14));
+  -webkit-backdrop-filter: blur(26px) saturate(105%); backdrop-filter: blur(26px) saturate(105%);
+  border: 1px solid rgba(255, 255, 255, .7);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .9),
+    inset 0 -1px 0 rgba(255, 255, 255, .25),
+    0 30px 70px -30px rgba(74, 46, 32, .55),
+    0 2px 6px -2px rgba(74, 46, 32, .12);
+}
+.glass::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; border-radius: inherit; pointer-events: none;
+  background:
+    radial-gradient(120% 60% at 15% 0%, rgba(255, 255, 255, .55), transparent 45%),
+    linear-gradient(90deg, rgba(255, 255, 255, .18), transparent 40%, rgba(255, 255, 255, .12));
+}
+.glass--red {
+  background: linear-gradient(140deg, rgba(255, 255, 255, .14), rgba(255, 255, 255, .03));
+  border-color: rgba(255, 255, 255, .32);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .45), 0 24px 50px -28px rgba(40, 0, 4, .8);
+}
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .glass { background: #F6EBD8; }
+  .glass--red { background: #B5262F; }
+}
+@media (prefers-reduced-transparency: reduce) {
+  .glass { background: #F6EBD8; -webkit-backdrop-filter: none; backdrop-filter: none; }
+  .glass--red { background: #B5262F; }
+}
+
+/* ---------- Botones ---------- */
+.btn {
+  --bg: var(--red); --fg: #fff;
+  display: inline-flex; align-items: center; justify-content: center; gap: .5em;
+  min-height: 48px; padding: 0 24px; border-radius: 999px; border: 0;
+  background: var(--bg); color: var(--fg);
+  font: 600 16px/1 "Onest", sans-serif; letter-spacing: -.01em;
+  text-decoration: none; white-space: nowrap; cursor: pointer;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .25), 0 10px 24px -12px rgba(165, 18, 28, .7);
+  transition: transform 160ms var(--ease), background-color 200ms ease;
+}
+.btn:active { transform: scale(.97); }
+@media (hover: hover) and (pointer: fine) { .btn:hover { background: #8E0F18; } }
+.btn--glass { --bg: rgba(255, 252, 246, .42); --fg: var(--ink); border: 1px solid rgba(255, 255, 255, .8); }
+.btn--glass.glass { box-shadow: inset 0 1px 0 rgba(255,255,255,.9), 0 12px 30px -18px rgba(74,46,32,.6); }
+@media (hover: hover) and (pointer: fine) { .btn--glass:hover { background: rgba(255, 255, 255, .7); } }
+.btn[disabled] { opacity: .45; cursor: not-allowed; transform: none; }
+.btn .ph { font-size: 1.15em; }
+
+/* ---------- Navegación ---------- */
+.nav { position: sticky; top: 0; z-index: 20; border-width: 0 0 1px; border-radius: 0; box-shadow: inset 0 -1px 0 rgba(255,255,255,.4), 0 10px 30px -24px rgba(74,46,32,.5); }
+.nav .wrap { display: flex; align-items: center; gap: 28px; height: var(--nav); }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; margin-right: auto; }
+.seal { flex: none; display: grid; place-items: center; width: 34px; height: 34px; border-radius: 9px; background: var(--red); color: #fff; font-size: 14px; line-height: 1; letter-spacing: 0; }
+.brand b { font-weight: 600; letter-spacing: -.02em; font-size: 17px; display: block; }
+.brand small { display: block; font-size: 12px; color: var(--ink-2); font-weight: 500; margin-top: 1px; }
+.nav nav { display: flex; gap: 24px; font-size: 14px; }
+.nav nav a { text-decoration: none; color: var(--ink-2); transition: color 150ms ease; }
+.nav nav a:hover { color: var(--ink); }
+.nav .btn { min-height: 36px; padding: 0 16px; font-size: 14px; }
+@media (max-width: 760px) { .nav nav, .brand small { display: none; } .nav .wrap { gap: 12px; } }
+
+/* ---------- Escena: la mesa acompaña el scroll detrás del cristal ---------- */
+.scene { position: relative; }
+.scene-bg { position: absolute; inset: 0; pointer-events: none; z-index: 0; }
+.scene-pin { position: sticky; top: var(--nav); height: calc(100dvh - var(--nav)); display: grid; align-items: center; }
+.scene-pin .wrap { display: grid; grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr); }
+.stage { grid-column: 2; justify-self: center; width: min(46vw, 720px); aspect-ratio: 1; }
+.stage svg { width: 100%; height: 100%; overflow: visible; }
+.mover { transform-origin: 50% 50%; }
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .mover { animation: follow linear both; animation-timeline: scroll(root); animation-range: 0 110vh; }
+    @keyframes follow {
+      0% { transform: none; }
+      100% { transform: translate(-30vw, 36vh) scale(1.12) rotate(70deg); }
+    }
+  }
+}
+.table-shadow { filter: blur(20px); opacity: .32; }
+.chair { transition: transform 620ms var(--ease-io), opacity 360ms ease; transform-origin: 0 0; }
+.chair.is-off { opacity: 0; }
+.setting { transition: transform 620ms var(--ease-io), opacity 300ms ease; transform-origin: 0 0; }
+.setting.is-off { opacity: 0; }
+.cloth, .underlay { transition: r 620ms var(--ease-io); }
+.susan { transform-origin: 0 0; }
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .susan { animation: spin linear both; animation-timeline: scroll(root); }
+    @keyframes spin { to { transform: rotate(300deg); } }
+  }
+}
+@media (prefers-reduced-motion: reduce) { .chair, .setting, .cloth, .underlay { transition: opacity 200ms ease; } }
+
+/* ---------- Hero ---------- */
+.hero { position: relative; z-index: 1; }
+.hero .wrap { display: grid; grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr); align-items: center; min-height: calc(100dvh - var(--nav)); padding-block: 40px; }
+.hero h1 { font-size: clamp(44px, 5.8vw, 84px); }
+.hero h1 em { font-style: normal; color: var(--red); }
+.hero .lede { margin-top: 20px; font-size: clamp(18px, 1.45vw, 21px); color: var(--ink-2); max-width: 30ch; }
+.guests { margin-top: 36px; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.stepper { display: inline-flex; align-items: center; gap: 4px; padding: 4px; border-radius: 999px; }
+.stepper button { width: 44px; height: 44px; border-radius: 999px; border: 0; background: transparent; color: var(--ink); display: grid; place-items: center; font-size: 20px; cursor: pointer; transition: background-color 150ms ease, transform 160ms var(--ease); }
+.stepper button:hover:not([disabled]) { background: rgba(255, 255, 255, .6); }
+.stepper button:active:not([disabled]) { transform: scale(.92); }
+.stepper button[disabled] { opacity: .3; cursor: not-allowed; }
+.stepper output { min-width: 108px; text-align: center; font-weight: 600; font-size: 17px; letter-spacing: -.01em; }
+.hero-note { margin-top: 18px; font-size: 14px; color: var(--ink-2); display: flex; gap: 8px; align-items: center; }
+
+/* ---------- Bloques ---------- */
+section.block { position: relative; z-index: 1; padding-block: clamp(80px, 11vw, 150px); }
+.block h2 { font-size: clamp(36px, 5vw, 64px); }
+.block .sub { margin-top: 16px; font-size: clamp(18px, 1.45vw, 21px); color: var(--ink-2); max-width: 46ch; }
+
+/* Emergen del cristal esmerilado al entrar en pantalla */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .emerge { animation: emerge linear both; animation-timeline: view(); animation-range: entry 0% entry 240px; }
+    @keyframes emerge { from { opacity: 0; filter: blur(16px); transform: translateY(48px) scale(.97); } }
+  }
+}
+
+/* ---------- Reserva ---------- */
+.book { margin-top: clamp(40px, 5vw, 64px); display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: clamp(20px, 3vw, 32px); align-items: start; }
+.panel { border-radius: 32px; padding: clamp(24px, 3.4vw, 40px); }
+.book fieldset { border: 0; padding: 0; margin: 0 0 36px; min-width: 0; }
+.book fieldset:last-child { margin-bottom: 0; }
+.book legend { font-weight: 600; font-size: 22px; letter-spacing: -.02em; margin-bottom: 16px; padding: 0; display: flex; gap: 12px; align-items: baseline; }
+.book legend span { font-size: 15px; font-weight: 500; color: var(--ink-2); letter-spacing: 0; }
+.days { display: grid; grid-auto-flow: column; grid-auto-columns: 74px; gap: 8px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 4px 4px 14px; margin: -4px -4px 0; scrollbar-width: thin; scrollbar-color: rgba(94,70,54,.35) transparent; }
+.tile {
+  position: relative; display: grid; place-items: center; gap: 2px;
+  border-radius: 18px; padding: 12px 6px; cursor: pointer; scroll-snap-align: start;
+  background: rgba(255, 255, 255, .32); color: var(--ink);
+  border: 1px solid rgba(255, 255, 255, .8); box-shadow: inset 0 1px 0 rgba(255,255,255,.9), 0 4px 12px -8px rgba(74,46,32,.5);
+  font: 500 14px/1.2 "Onest", sans-serif;
+  transition: background-color 160ms ease, color 160ms ease, transform 160ms var(--ease);
+}
+.tile:active { transform: scale(.96); }
+@media (hover: hover) and (pointer: fine) { .tile:hover:not([aria-disabled="true"]):not([aria-pressed="true"]) { background: rgba(255, 255, 255, .82); } }
+.tile b { font-size: 24px; font-weight: 600; letter-spacing: -.03em; }
+.tile small { font-size: 12px; color: var(--ink-2); text-transform: lowercase; }
+.tile[aria-pressed="true"] { background: var(--red-deep); color: #fff; border-color: var(--red-deep); box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 10px 22px -10px rgba(111, 9, 16, .9); }
+.tile[aria-pressed="true"] small { color: #F7D9D4; }
+.tile[aria-disabled="true"] { opacity: .4; cursor: not-allowed; text-decoration: line-through; }
+.book h3 { font-size: 14px; font-weight: 500; color: var(--ink-2); letter-spacing: 0; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }
+.slots { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 8px; }
+.slots + h3 { margin-top: 20px; }
+.slots .tile { padding: 14px 4px; font-size: 16px; font-weight: 600; }
+@media (max-width: 560px) { .slots { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+.field { display: grid; gap: 8px; margin-bottom: 18px; }
+.field label { font-size: 14px; font-weight: 600; }
+.field label span { font-weight: 400; color: var(--ink-2); }
+.field input, .field textarea {
+  width: 100%; border: 1px solid rgba(94, 70, 54, .28); background: rgba(255, 255, 255, .55); color: var(--ink); border-radius: 14px;
+  padding: 13px 16px; font: 400 17px/1.4 "Onest", sans-serif; caret-color: var(--red);
+  transition: border-color 150ms ease, box-shadow 150ms ease, background-color 150ms ease;
+}
+.field textarea { min-height: 96px; resize: vertical; }
+.field input::placeholder, .field textarea::placeholder { color: #6A5343; }
+.field input:focus, .field textarea:focus { outline: none; background: #fff; border-color: var(--red); box-shadow: 0 0 0 4px rgba(165, 18, 28, .14); }
+.field [aria-invalid="true"] { border-color: var(--red); background: #FFF6F4; }
+.err { font-size: 14px; color: var(--red); display: none; align-items: center; gap: 6px; margin: 0; }
+.err.on { display: flex; }
+.two { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0 14px; }
+@media (max-width: 560px) { .two { grid-template-columns: minmax(0, 1fr); } }
+.check { display: flex; gap: 12px; align-items: flex-start; font-size: 14px; color: var(--ink-2); margin: 6px 0 4px; }
+.check input { width: 20px; height: 20px; margin: 1px 0 0; accent-color: var(--red); flex: none; }
+
+.ticket { position: sticky; top: 88px; }
+.ticket .count { display: flex; align-items: baseline; gap: 10px; margin-bottom: 8px; }
+.ticket .count b { font-size: 64px; letter-spacing: -.05em; line-height: 1; }
+.ticket .count span { color: var(--ink-2); }
+.ticket dl { margin: 0; }
+.ticket dl div { display: flex; justify-content: space-between; gap: 12px; padding: 14px 0; border-top: 1px solid rgba(94, 70, 54, .16); }
+.ticket dt { color: var(--ink-2); font-size: 15px; }
+.ticket dd { margin: 0; font-weight: 600; text-align: right; }
+.ticket dd.empty { color: #6A5343; font-weight: 400; }
+.ticket .btn { width: 100%; margin-top: 18px; }
+.ticket .fine { margin-top: 14px; font-size: 13px; color: var(--ink-2); text-align: center; }
+.ticket .form-err { margin-top: 12px; font-size: 14px; color: var(--red); display: none; gap: 6px; align-items: flex-start; }
+.ticket .form-err.on { display: flex; }
+.btn .spin { width: 18px; height: 18px; border-radius: 50%; border: 2px solid rgba(255,255,255,.35); border-top-color: #fff; animation: rot 600ms linear infinite; display: none; }
+.btn.loading .spin { display: block; }
+@keyframes rot { to { transform: rotate(1turn); } }
+.done { display: none; text-align: center; padding: 12px 0 4px; }
+.done.on { display: block; }
+.done .ph-fill { font-size: 56px; color: var(--red); }
+.done h3 { font-size: 30px; margin: 12px 0 10px; }
+.done p { color: var(--ink-2); max-width: 40ch; margin: 0 auto; }
+.done .actions { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 24px; }
+@media (max-width: 900px) { .book { grid-template-columns: minmax(0, 1fr); } .ticket { position: static; } }
+
+/* ---------- Carta: platos servidos en porcelana ---------- */
+#carta { background: var(--red); color: #fff; overflow: clip; }
+#carta .sub { color: #F7D9D4; }
+.rail { margin-top: clamp(40px, 6vw, 72px); overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding-inline: var(--pad); }
+.rail::-webkit-scrollbar { display: none; }
+.track { display: flex; gap: clamp(20px, 3vw, 40px); width: max-content; padding-inline: max(0px, calc((100vw - var(--maxw)) / 2)); }
+.dish { width: clamp(220px, 23vw, 300px); flex: none; margin: 0; scroll-snap-align: center; display: grid; justify-items: center; gap: 18px; }
+.dish svg { width: 100%; aspect-ratio: 1; overflow: visible; }
+.dish .spinner { transform-origin: 0 0; }
+.dish figcaption { padding: 12px 20px; border-radius: 999px; display: flex; align-items: baseline; gap: 10px; white-space: nowrap; }
+.dish figcaption b { font-weight: 600; font-size: 17px; letter-spacing: -.01em; }
+.dish figcaption .hanzi { font-size: 14px; color: #F7D9D4; }
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .rail { overflow: visible; scroll-snap-type: none; }
+    .track { animation: pan linear both; animation-timeline: --carta; animation-range: cover 15% cover 85%; }
+    #carta { view-timeline-name: --carta; }
+    body { timeline-scope: --carta; }
+    @keyframes pan { to { transform: translateX(calc(var(--shift, 0) * -1px)); } }
+    .dish .spinner { animation: roll linear both; animation-timeline: --carta; animation-range: cover 15% cover 85%; }
+    @keyframes roll { to { transform: rotate(-120deg); } }
+  }
+}
+.carta-foot { margin-top: 36px; color: #F7D9D4; font-size: 15px; display: flex; gap: 8px; align-items: center; }
+
+/* ---------- El local ---------- */
+.local { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: clamp(32px, 6vw, 96px); align-items: center; }
+.frames { display: grid; grid-template-columns: 1.3fr 1fr; gap: 14px; }
+.frame {
+  position: relative; border-radius: 28px; overflow: hidden; aspect-ratio: 4 / 5; margin: 0;
+  background-color: var(--ground-2);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cpath d='M28 4 52 28 28 52 4 28Z M28 16 40 28 28 40 16 28Z' fill='none' stroke='%23A5121C' stroke-opacity='.22' stroke-width='1.5'/%3E%3C/svg%3E");
+  display: grid; place-items: end start; padding: 16px;
+}
+.frame:nth-child(2) { aspect-ratio: 3 / 4; align-self: end; }
+.frame figcaption { font-size: 13px; color: var(--ink-2); padding: 7px 12px; border-radius: 999px; display: flex; gap: 6px; align-items: center; white-space: nowrap; max-width: 100%; }
+@media (max-width: 560px) { .frame { padding: 10px; } .frame figcaption { font-size: 12px; padding: 6px 10px; } }
+.rating { margin-top: 36px; display: inline-flex; align-items: center; gap: 16px; padding: 18px 24px; border-radius: 24px; }
+.rating b { font-size: 52px; letter-spacing: -.04em; line-height: 1; }
+.rating .stars { color: var(--ink); font-size: 18px; display: flex; gap: 2px; }
+.rating small { display: block; color: var(--ink-2); font-size: 14px; margin-top: 4px; }
+.services { margin: 24px 0 0; display: flex; gap: 10px; flex-wrap: wrap; padding: 0; list-style: none; }
+.services li { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 999px; background: rgba(255,255,255,.26); border: 1px solid rgba(255,255,255,.6); font-size: 15px; font-weight: 500; }
+@media (max-width: 860px) { .local { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- Cómo llegar ---------- */
+#contacto { padding-top: 0; overflow: clip; }
+.ring {
+  position: absolute; z-index: -1; pointer-events: none; aspect-ratio: 1; border-radius: 50%;
+  width: min(70vw, 820px); right: -12vw; top: 50%; translate: 0 -50%;
+  background: radial-gradient(circle, var(--cloth) 0 58%, transparent 58.2%), radial-gradient(circle, #C21C26 0 62%, #7A0A12 66%, transparent 66.3%);
+}
+#contacto .wrap { position: relative; isolation: isolate; }
+.visit { border-radius: 40px; overflow: hidden; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); }
+.visit-info { padding: clamp(32px, 5vw, 64px); display: flex; flex-direction: column; gap: 28px; }
+.phone-big { white-space: nowrap; font-size: clamp(36px, 4.4vw, 64px); font-weight: 700; letter-spacing: -.04em; line-height: 1; text-decoration: none; }
+.phone-big:hover { color: var(--red); }
+.visit-info .rows { display: grid; gap: 20px; }
+.visit-info .row { display: grid; grid-template-columns: 28px 1fr; gap: 10px; }
+.visit-info .row .ph { font-size: 22px; margin-top: 1px; }
+.visit-info .row b { display: block; font-weight: 600; }
+.visit-info .row span { color: var(--ink-2); font-size: 15px; }
+.visit-info .ctas { display: flex; gap: 10px; flex-wrap: wrap; }
+.map { min-height: 420px; position: relative; display: grid; place-items: center; align-content: center; gap: 14px; padding: 32px; text-align: center; border-left: 1px solid rgba(255,255,255,.5); }
+.map p { font-size: 14px; color: var(--ink-2); max-width: 32ch; }
+.map iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; filter: saturate(.75) sepia(.12); }
+.map.loaded { padding: 0; }
+@media (max-width: 860px) { .visit { grid-template-columns: minmax(0, 1fr); } .map { min-height: 320px; border-left: 0; border-top: 1px solid rgba(255,255,255,.5); } .ring { width: 120vw; right: -50vw; } }
+
+footer { position: relative; z-index: 1; padding: 48px 0 calc(40px + env(safe-area-inset-bottom)); font-size: 14px; color: var(--ink-2); }
+footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+
+/* ---------- Dragón que baja con el scroll ---------- */
+body { position: relative; }
+.dragon { position: absolute; top: 0; left: 0; width: 100%; pointer-events: none; z-index: 0; overflow: hidden; }
+.dragon svg.body { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.dragon .reveal { stroke-dasharray: var(--len) var(--len); stroke-dashoffset: 0; }
+.dragon-head { position: absolute; top: 0; left: 0; width: 176px; height: 123px; offset-distance: 100%; offset-rotate: auto; offset-anchor: 24% 50%; filter: drop-shadow(0 10px 14px rgba(74, 7, 16, .35)); }
+@media (min-width: 1440px) { .dragon { z-index: 3; } }
+@media (min-width: 761px) and (max-width: 1439px) { .wrap { padding-right: max(var(--pad), 92px); } }
+@media (max-width: 760px) { .wrap { padding-right: 46px; } }
+.dragon-head svg { width: 100%; height: 100%; overflow: visible; }
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .dragon .reveal { animation: draw linear both; animation-timeline: scroll(root); }
+    @keyframes draw { from { stroke-dashoffset: var(--len); } to { stroke-dashoffset: 0; } }
+    .dragon-head { animation: swim linear both; animation-timeline: scroll(root); }
+    @keyframes swim { from { offset-distance: 0%; } to { offset-distance: 100%; } }
+    .dragon-head .jaw { animation: chomp 1.6s ease-in-out infinite alternate; transform-origin: 10px 6px; }
+    @keyframes chomp { to { transform: rotate(9deg); } }
+  }
+}
+@media (max-width: 1439px) { .dragon-head { width: 132px; height: 88px; } }
+@media (max-width: 760px) { .dragon-head { width: 90px; height: 60px; } }
+
+/* ---------- Barra móvil ---------- */
+.bar { position: fixed; left: 12px; right: 12px; bottom: calc(12px + env(safe-area-inset-bottom)); z-index: 30; display: none; gap: 8px; padding: 8px; border-radius: 999px; transition: transform 300ms var(--ease), opacity 200ms ease; }
+.bar .btn { flex: 1; min-height: 46px; padding: 0 14px; }
+.bar.hide { transform: translateY(140%); opacity: 0; }
+
+/* ---------- Móvil ---------- */
+@media (max-width: 860px) {
+  .scene-pin { align-items: start; }
+  .scene-pin .wrap { grid-template-columns: minmax(0, 1fr); }
+  .stage { grid-column: 1; width: min(84vw, 420px); margin-top: 8px; }
+  .hero .wrap { grid-template-columns: minmax(0, 1fr); min-height: 0; padding-top: calc(min(84vw, 420px) + 24px); padding-bottom: 56px; }
+  .hero h1 { font-size: clamp(40px, 11vw, 56px); }
+  @supports (animation-timeline: scroll()) {
+    @media (prefers-reduced-motion: no-preference) {
+      @keyframes follow { 100% { transform: translateY(52vh) scale(1.2) rotate(70deg); } }
+    }
+  }
+}
+@media (max-width: 760px) { .bar { display: flex; } footer { padding-bottom: 110px; } }
+</style>
+</head>
+<body>
+
+<!-- Piezas de la mesa y de los platos, dibujadas a partir del salón: piel beige, madera oscura, mantel blanco sobre bajomantel rojo, porcelana con borde rojo y la celosía de la ventana -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <radialGradient id="t-cloth" cx="38%" cy="32%" r="78%"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".62" stop-color="#F6F1E8"/><stop offset=".9" stop-color="#E9E0D1"/><stop offset="1" stop-color="#DDD2C0"/></radialGradient>
+    <radialGradient id="t-underlay" cx="40%" cy="34%" r="80%"><stop offset="0" stop-color="#C21C26"/><stop offset=".85" stop-color="#9E1019"/><stop offset="1" stop-color="#7A0A12"/></radialGradient>
+    <radialGradient id="t-leather" cx="38%" cy="30%" r="85%"><stop offset="0" stop-color="#F7E6C8"/><stop offset=".45" stop-color="#EBD1A6"/><stop offset="1" stop-color="#C9A26D"/></radialGradient>
+    <linearGradient id="t-wood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6A4330"/><stop offset=".5" stop-color="#4A2E20"/><stop offset="1" stop-color="#2C1A11"/></linearGradient>
+    <linearGradient id="t-stick" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8A5A3C"/><stop offset="1" stop-color="#5A3826"/></linearGradient>
+    <radialGradient id="t-porcelain" cx="40%" cy="35%" r="70%"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".8" stop-color="#F4F0EA"/><stop offset="1" stop-color="#E2DBD0"/></radialGradient>
+    <radialGradient id="t-glass" cx="35%" cy="30%" r="80%"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".55"/><stop offset=".7" stop-color="#D9D3CB" stop-opacity=".35"/><stop offset="1" stop-color="#A9A097" stop-opacity=".45"/></radialGradient>
+    <radialGradient id="t-rice" cx="40%" cy="35%" r="70%"><stop offset="0" stop-color="#F8E3A6"/><stop offset="1" stop-color="#D9AE52"/></radialGradient>
+    <radialGradient id="t-fry" cx="35%" cy="30%" r="80%"><stop offset="0" stop-color="#F2B65A"/><stop offset="1" stop-color="#B8701F"/></radialGradient>
+    <radialGradient id="t-noodle" cx="40%" cy="35%" r="70%"><stop offset="0" stop-color="#F3CF86"/><stop offset="1" stop-color="#C98F3A"/></radialGradient>
+    <radialGradient id="t-sauce" cx="40%" cy="35%" r="70%"><stop offset="0" stop-color="#B5562C"/><stop offset="1" stop-color="#6E2A12"/></radialGradient>
+    <filter id="t-soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3"/></filter>
+
+    <g id="t-chair">
+      <ellipse cx="2" cy="6" rx="30" ry="27" fill="#2A1A12" opacity=".22" filter="url(#t-soft)"/>
+      <path d="M-29 -16 Q-30 -33 0 -34 Q30 -33 29 -16 L24 -15 Q24 -27 0 -27 Q-24 -27 -24 -15 Z" fill="url(#t-wood)"/>
+      <path d="M-23.5 -16.5 Q-23 -25.5 0 -26 Q23 -25.5 23.5 -16.5 L20 -16 Q19.5 -22 0 -22.4 Q-19.5 -22 -20 -16 Z" fill="url(#t-leather)"/>
+      <rect x="-25" y="-17" width="50" height="44" rx="15" fill="url(#t-wood)"/>
+      <rect x="-22.5" y="-15" width="45" height="39.5" rx="13" fill="url(#t-leather)"/>
+      <path d="M-14 -6 Q0 -9 14 -6 M-15 6 Q0 3 15 6" fill="none" stroke="#A9814F" stroke-opacity=".45" stroke-width="1" stroke-linecap="round"/>
+      <circle cx="-7" cy="0" r="1.1" fill="#9C7442" opacity=".6"/><circle cx="7" cy="0" r="1.1" fill="#9C7442" opacity=".6"/>
+      <path d="M-17 -11 Q-6 -14 6 -12" fill="none" stroke="#FFF7E6" stroke-opacity=".7" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <g id="t-setting">
+      <ellipse cx="1.5" cy="2.5" rx="17.5" ry="17.5" fill="#4A2E20" opacity=".16" filter="url(#t-soft)"/>
+      <circle r="17" fill="url(#t-porcelain)"/>
+      <circle r="17" fill="none" stroke="#D6CCBD" stroke-width=".8"/>
+      <circle r="14.6" fill="none" stroke="#A5121C" stroke-width="1.8" stroke-dasharray="2.4 1.6"/>
+      <circle r="11.2" fill="none" stroke="#A5121C" stroke-opacity=".55" stroke-width=".7"/>
+      <path d="M0 -4 4 0 0 4 -4 0Z M0 -1.8 1.8 0 0 1.8 -1.8 0Z" fill="none" stroke="#A5121C" stroke-opacity=".75" stroke-width=".7"/>
+      <path d="M-9 -9 Q-3 -12 3 -11" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round"/>
+      <rect x="22.5" y="-15" width="2.6" height="32" rx="1.3" fill="url(#t-stick)"/>
+      <rect x="27" y="-15" width="2.6" height="32" rx="1.3" fill="url(#t-stick)"/>
+      <rect x="21" y="9" width="10" height="4" rx="2" fill="#F4F0EA" stroke="#D6CCBD" stroke-width=".6"/>
+    </g>
+
+    <!-- Plato base de porcelana (radio 52) -->
+    <g id="d-plate">
+      <ellipse cx="4" cy="7" rx="52" ry="52" fill="#2A0A06" opacity=".28" filter="url(#t-soft)"/>
+      <circle r="52" fill="url(#t-porcelain)"/>
+      <circle r="52" fill="none" stroke="#D6CCBD" stroke-width="1"/>
+      <circle r="46" fill="none" stroke="#A5121C" stroke-width="3.4" stroke-dasharray="5 3.6"/>
+      <circle r="40.5" fill="none" stroke="#A5121C" stroke-opacity=".5" stroke-width="1"/>
+      <path d="M-34 -30 Q-18 -44 4 -45" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <g id="d-rice">
+      <use href="#d-plate"/>
+      <ellipse rx="31" ry="28" fill="url(#t-rice)"/>
+      <g fill="#FFF3D2" opacity=".8"><ellipse cx="-14" cy="-12" rx="2.2" ry="1.1"/><ellipse cx="-4" cy="-18" rx="2.2" ry="1.1" transform="rotate(30 -4 -18)"/><ellipse cx="9" cy="-14" rx="2.2" ry="1.1"/><ellipse cx="17" cy="-4" rx="2.2" ry="1.1" transform="rotate(-40 17 -4)"/><ellipse cx="-19" cy="2" rx="2.2" ry="1.1"/><ellipse cx="-8" cy="12" rx="2.2" ry="1.1" transform="rotate(20 -8 12)"/><ellipse cx="6" cy="17" rx="2.2" ry="1.1"/><ellipse cx="16" cy="10" rx="2.2" ry="1.1"/><ellipse cx="0" cy="0" rx="2.2" ry="1.1" transform="rotate(60)"/></g>
+      <g fill="#5E8C3A"><circle cx="-12" cy="-6" r="2.6"/><circle cx="8" cy="5" r="2.6"/><circle cx="16" cy="-12" r="2.4"/><circle cx="-4" cy="14" r="2.4"/><circle cx="-20" cy="10" r="2.2"/><circle cx="2" cy="-20" r="2.2"/></g>
+      <g fill="#E0786A"><rect x="-3" y="-12" width="7" height="4.2" rx="1.2"/><rect x="-18" y="2" width="7" height="4.2" rx="1.2" transform="rotate(-15 -14 4)"/><rect x="10" y="10" width="7" height="4.2" rx="1.2" transform="rotate(20 13 12)"/><rect x="12" y="-4" width="6" height="4" rx="1.2"/></g>
+      <g fill="#FBE79A" stroke="#F2CF5C" stroke-width=".6"><path d="M-8 -3 q4 -4 8 0 q-4 4 -8 0Z"/><path d="M4 -10 q4 -3 7 1 q-4 3 -7 -1Z"/><path d="M-12 14 q3 -4 7 0 q-4 3 -7 0Z"/></g>
+    </g>
+
+    <g id="d-chicken">
+      <use href="#d-plate"/>
+      <ellipse rx="30" ry="27" fill="#F3D27A" opacity=".55"/>
+      <g fill="url(#t-fry)" stroke="#A9661E" stroke-width=".6">
+        <rect x="-24" y="-16" width="20" height="13" rx="6" transform="rotate(-18 -14 -10)"/>
+        <rect x="0" y="-20" width="20" height="13" rx="6" transform="rotate(14 10 -14)"/>
+        <rect x="-20" y="4" width="20" height="13" rx="6" transform="rotate(10 -10 10)"/>
+        <rect x="4" y="2" width="18" height="12" rx="6" transform="rotate(-8 13 8)"/>
+      </g>
+      <g><circle cx="22" cy="18" r="10" fill="#F4D23C" stroke="#D9A91E" stroke-width="1.4"/><circle cx="22" cy="18" r="7.4" fill="#FBE57A"/><path d="M22 10.6V25.4M14.6 18H29.4M16.8 12.8 27.2 23.2M27.2 12.8 16.8 23.2" stroke="#F2C72E" stroke-width=".9"/></g>
+      <g><circle cx="-24" cy="-22" r="7" fill="#F4D23C" stroke="#D9A91E" stroke-width="1.2"/><circle cx="-24" cy="-22" r="5" fill="#FBE57A"/></g>
+      <g fill="#5E8C3A"><circle cx="-2" cy="-2" r="1.4"/><circle cx="6" cy="-6" r="1.2"/><circle cx="-10" cy="-4" r="1.2"/></g>
+    </g>
+
+    <g id="d-rolls">
+      <use href="#d-plate"/>
+      <path d="M-30 6 Q-26 -22 -2 -26 Q26 -26 30 0 Q24 24 0 26 Q-26 26 -30 6Z" fill="#8DBA52"/>
+      <path d="M-24 4 Q-16 -14 4 -18 M-14 18 Q2 6 24 -6" fill="none" stroke="#6E9A3A" stroke-width="1.2"/>
+      <g fill="url(#t-fry)" stroke="#A9661E" stroke-width=".7" transform="rotate(-24)">
+        <rect x="-26" y="-17" width="52" height="11" rx="5.5"/>
+        <rect x="-26" y="-4" width="52" height="11" rx="5.5"/>
+        <rect x="-26" y="9" width="52" height="11" rx="5.5"/>
+      </g>
+      <g stroke="#E8A64A" stroke-width=".8" opacity=".8" transform="rotate(-24)"><path d="M-18 -16v9M-6 -16v9M6 -16v9M18 -16v9M-18 -3v9M-6 -3v9M6 -3v9M18 -3v9M-18 10v9M-6 10v9M6 10v9M18 10v9"/></g>
+    </g>
+
+    <g id="d-noodles">
+      <use href="#d-plate"/>
+      <ellipse rx="31" ry="28" fill="url(#t-noodle)"/>
+      <g fill="none" stroke-linecap="round" stroke-width="2.4">
+        <path d="M-26 -8 q6 -6 12 0 t12 0 t12 0 t12 0" stroke="#F6D995"/>
+        <path d="M-28 2 q6 -6 12 0 t12 0 t12 0 t12 0" stroke="#E9BA62"/>
+        <path d="M-24 12 q6 -6 12 0 t12 0 t12 0 t12 0" stroke="#F6D995"/>
+        <path d="M-18 -18 q6 -6 12 0 t12 0 t12 0" stroke="#E9BA62"/>
+        <path d="M-16 21 q6 -6 12 0 t12 0 t10 0" stroke="#E9BA62"/>
+      </g>
+      <g fill="#E58A3A"><rect x="-10" y="-14" width="10" height="2.4" rx="1.2" transform="rotate(30 -5 -13)"/><rect x="6" y="6" width="10" height="2.4" rx="1.2" transform="rotate(-20 11 7)"/><rect x="-18" y="8" width="9" height="2.4" rx="1.2"/></g>
+      <g fill="#5E8C3A"><rect x="8" y="-12" width="9" height="2.6" rx="1.3" transform="rotate(-30 12 -11)"/><rect x="-6" y="16" width="9" height="2.6" rx="1.3" transform="rotate(15 -2 17)"/><rect x="-22" y="-4" width="8" height="2.6" rx="1.3"/></g>
+    </g>
+
+    <g id="d-kubak">
+      <use href="#d-plate"/>
+      <ellipse rx="32" ry="29" fill="url(#t-sauce)"/>
+      <g fill="#E8B862" stroke="#B9822F" stroke-width=".8">
+        <rect x="-24" y="-20" width="16" height="13" rx="3" transform="rotate(-8 -16 -14)"/>
+        <rect x="-4" y="-22" width="16" height="13" rx="3" transform="rotate(10 4 -16)"/>
+        <rect x="12" y="-8" width="15" height="13" rx="3" transform="rotate(-12 19 -2)"/>
+        <rect x="-20" y="0" width="16" height="13" rx="3" transform="rotate(6 -12 6)"/>
+        <rect x="-2" y="2" width="15" height="13" rx="3" transform="rotate(-6 6 8)"/>
+      </g>
+      <g fill="#F4E2B0" opacity=".7"><circle cx="-18" cy="-15" r="1"/><circle cx="-12" cy="-12" r="1"/><circle cx="2" cy="-17" r="1"/><circle cx="6" cy="-13" r="1"/><circle cx="18" cy="-3" r="1"/><circle cx="-14" cy="5" r="1"/><circle cx="4" cy="8" r="1"/></g>
+      <g fill="#F2A3A0"><path d="M14 12 q6 -4 9 2 q-5 5 -9 -2Z"/><path d="M-26 16 q6 -4 9 2 q-5 5 -9 -2Z"/></g>
+      <g fill="#5E8C3A"><circle cx="20" cy="16" r="2.4"/><circle cx="-8" cy="20" r="2.2"/><circle cx="24" cy="-16" r="2"/></g>
+    </g>
+
+    <g id="d-beef">
+      <use href="#d-plate"/>
+      <ellipse rx="31" ry="28" fill="#7A3A1E" opacity=".35"/>
+      <g fill="#6B3420" stroke="#4A2214" stroke-width=".6">
+        <path d="M-24 -10 q10 -6 22 -2 q-2 6 -22 6Z"/><path d="M-4 -20 q12 -4 22 4 q-4 6 -22 0Z"/><path d="M4 -2 q12 -2 20 8 q-6 4 -20 -2Z"/>
+        <path d="M-22 6 q12 -2 20 6 q-6 6 -20 0Z"/><path d="M-8 14 q12 0 18 8 q-8 4 -18 -2Z"/><path d="M10 -14 q8 2 12 10 q-6 2 -12 -4Z"/>
+      </g>
+      <g fill="#9C5232" opacity=".7"><path d="M-20 -8 q8 -3 14 -1"/><rect x="-2" y="-17" width="10" height="1.4" rx=".7"/><rect x="6" y="1" width="9" height="1.4" rx=".7"/></g>
+      <g fill="#6FA040"><rect x="-14" y="-2" width="12" height="3" rx="1.5" transform="rotate(-25 -8 0)"/><rect x="6" y="10" width="12" height="3" rx="1.5" transform="rotate(30 12 11)"/><rect x="-2" y="-26" width="10" height="3" rx="1.5"/><rect x="14" y="-8" width="10" height="3" rx="1.5" transform="rotate(60 19 -6)"/></g>
+      <g fill="#F4F0E2"><rect x="-10" y="20" width="8" height="3" rx="1.5"/><rect x="16" y="2" width="7" height="3" rx="1.5" transform="rotate(40 19 3)"/></g>
+    </g>
+
+    <g id="d-prawns">
+      <use href="#d-plate"/>
+      <ellipse rx="30" ry="27" fill="#F2C9A8" opacity=".45"/>
+      <g fill="none" stroke-linecap="round">
+        <g transform="translate(-12 -10) rotate(-20)"><path d="M-9 0 a9 9 0 1 1 9 9" stroke="#EF7E45" stroke-width="7"/><path d="M-9 0 a9 9 0 1 1 9 9" stroke="#F8B18A" stroke-width="2" stroke-dasharray="2 3"/></g>
+        <g transform="translate(12 -12) rotate(60)"><path d="M-9 0 a9 9 0 1 1 9 9" stroke="#EF7E45" stroke-width="7"/><path d="M-9 0 a9 9 0 1 1 9 9" stroke="#F8B18A" stroke-width="2" stroke-dasharray="2 3"/></g>
+        <g transform="translate(-10 13) rotate(140)"><path d="M-9 0 a9 9 0 1 1 9 9" stroke="#EF7E45" stroke-width="7"/><path d="M-9 0 a9 9 0 1 1 9 9" stroke="#F8B18A" stroke-width="2" stroke-dasharray="2 3"/></g>
+        <g transform="translate(13 11) rotate(220)"><path d="M-9 0 a9 9 0 1 1 9 9" stroke="#EF7E45" stroke-width="7"/><path d="M-9 0 a9 9 0 1 1 9 9" stroke="#F8B18A" stroke-width="2" stroke-dasharray="2 3"/></g>
+      </g>
+      <g fill="#5E8C3A"><circle cx="0" cy="0" r="2.6"/><circle cx="-24" cy="2" r="2"/><circle cx="24" cy="-2" r="2"/><circle cx="2" cy="24" r="2"/></g>
+      <g fill="#F4D23C"><circle cx="0" cy="-24" r="2.4"/></g>
+    </g>
+
+    <!-- Bandeja giratoria de cristal: las mismas fuentes de la carta, en pequeño -->
+    <g id="t-susan">
+      <circle r="47" fill="url(#t-glass)"/>
+      <circle r="47" fill="none" stroke="#FFFFFF" stroke-opacity=".9" stroke-width="1.6"/>
+      <circle r="44" fill="none" stroke="#8C8279" stroke-opacity=".25" stroke-width=".8"/>
+      <path d="M-38 -22 A44 44 0 0 1 -6 -43.5" fill="none" stroke="#FFFFFF" stroke-opacity=".85" stroke-width="2.4" stroke-linecap="round"/>
+      <path d="M30 32 A44 44 0 0 1 14 41" fill="none" stroke="#FFFFFF" stroke-opacity=".5" stroke-width="1.6" stroke-linecap="round"/>
+      <use href="#d-rice" transform="translate(0 -21) scale(.3)"/>
+      <use href="#d-chicken" transform="translate(19 12) scale(.27)"/>
+      <use href="#d-rolls" transform="translate(-19 12) scale(.27)"/>
+      <circle r="4.5" fill="#FFFFFF" fill-opacity=".8" stroke="#A9A097" stroke-opacity=".5" stroke-width=".6"/>
+    </g>
+  </defs>
+</svg>
+
+<div class="dragon" id="dragon" aria-hidden="true">
+  <svg class="body" id="dragonBody">
+    <defs>
+      <pattern id="dg-scales" width="14" height="10" patternUnits="userSpaceOnUse">
+        <path d="M0 10 A7 7 0 0 1 14 10 M-7 5 A7 7 0 0 1 7 5 M7 5 A7 7 0 0 1 21 5" fill="none" stroke="#6E0910" stroke-opacity=".75" stroke-width="1.3"/>
+        <path d="M3 8 A4.5 4.5 0 0 1 11 8" fill="none" stroke="#E2434B" stroke-opacity=".45" stroke-width="1"/>
+      </pattern>
+      <filter id="dg-blur3"><feGaussianBlur stdDeviation="3"/></filter>
+      <mask id="dg-mask" maskUnits="userSpaceOnUse"><path class="reveal dg-path" fill="none" stroke="#fff" data-w="140" stroke-linecap="round"/></mask>
+    </defs>
+    <g mask="url(#dg-mask)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path class="dg-path" stroke="#4A0710" stroke-opacity=".26" data-w="46" transform="translate(8 14)" style="filter: blur(8px)"/>
+      <g id="dragonFins"></g>
+      <path class="dg-path" stroke="#D9A441" data-w="40" data-dx="7"/>
+      <path class="dg-path" stroke="#9C6E2A" stroke-opacity=".5" data-w="40" data-dx="7" stroke-dasharray="1.4 7" stroke-linecap="butt"/>
+      <path class="dg-path" stroke="#4A0710" data-w="38"/>
+      <path class="dg-path" stroke="#A5121C" data-w="33"/>
+      <path class="dg-path" stroke="url(#dg-scales)" data-w="31" stroke-linecap="butt"/>
+      <path class="dg-path" stroke="#4A0710" stroke-opacity=".38" data-w="10" data-dx="8" filter="url(#dg-blur3)"/>
+      <path class="dg-path" stroke="#F0767C" stroke-opacity=".5" data-w="5" data-dx="-8" filter="url(#dg-blur3)"/>
+    </g>
+    <g id="dragonTail"></g>
+  </svg>
+  <div class="dragon-head" id="dragonHead">
+    <!-- Cabeza de dragón mirando en el sentido de la marcha (+x): melena, astas, ceja, ojo almendrado, hocico con nariz rizada, mandíbula con colmillos y barba -->
+    <svg viewBox="-56 -50 150 100">
+      <defs>
+        <radialGradient id="dh-red" cx="45%" cy="35%" r="75%"><stop offset="0" stop-color="#D42A33"/><stop offset=".7" stop-color="#A5121C"/><stop offset="1" stop-color="#6E0910"/></radialGradient>
+        <linearGradient id="dh-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EBC170"/><stop offset="1" stop-color="#B9822F"/></linearGradient>
+      </defs>
+      <g fill="url(#dh-gold)" stroke="#9C6E2A" stroke-width=".8" stroke-linejoin="round">
+        <path d="M-6 -12 C-20 -26 -36 -24 -52 -34 C-44 -22 -46 -16 -40 -12 C-50 -10 -54 -2 -56 4 C-46 0 -40 2 -34 4 C-44 10 -46 20 -52 28 C-38 22 -28 22 -20 14 C-22 24 -18 30 -16 38 C-8 28 -4 20 -2 12Z"/>
+        <path d="M2 10 C8 22 20 28 34 26 C26 32 26 38 20 44 C34 40 44 30 46 18Z"/>
+      </g>
+      <g fill="none" stroke="url(#dh-gold)" stroke-linecap="round">
+        <path d="M14 -18 C6 -32 -8 -40 -26 -44" stroke-width="4.5"/>
+        <path d="M2 -33 C-2 -40 -2 -46 2 -50" stroke-width="3.2"/>
+        <path d="M-12 -40 C-18 -44 -20 -48 -18 -52" stroke-width="3"/>
+        <path d="M22 -18 C18 -30 10 -38 -2 -42" stroke-width="3.4" stroke-opacity=".85"/>
+      </g>
+      <path d="M-14 -14 C2 -26 26 -26 44 -16 C58 -16 72 -14 82 -9 C90 -6 90 2 84 4 L56 6 C40 12 18 16 -4 16 C-14 14 -18 4 -14 -14Z" fill="url(#dh-red)" stroke="#4A0710" stroke-width="1.6"/>
+      <g class="jaw">
+        <path d="M10 8 C26 10 44 8 62 8 C68 10 66 16 58 18 C40 24 22 24 6 18Z" fill="#8E0F18" stroke="#4A0710" stroke-width="1.4"/>
+        <path d="M14 9 C30 12 46 11 60 9 L58 12 C44 14 30 15 14 12Z" fill="#3A0508"/>
+        <path d="M54 8 c1 4 3 6 6 7 c-1 -3 -1 -5 0 -7Z M22 10 c0 4 2 6 4 7 c0 -3 0 -5 1 -7Z" fill="#FFF7E6"/>
+      </g>
+      <path d="M82 -10 c6 -2 10 2 8 7 c-2 4 -8 3 -8 -1" fill="none" stroke="#4A0710" stroke-width="1.6" stroke-linecap="round"/>
+      <path d="M20 -22 C30 -30 44 -26 52 -16" fill="none" stroke="#4A0710" stroke-width="4" stroke-linecap="round"/>
+      <path d="M24 -24 l-2 -6 M32 -27 l0 -6 M40 -26 l2 -6" stroke="url(#dh-gold)" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M30 -14 C36 -20 44 -18 48 -12 C42 -9 36 -9 30 -14Z" fill="url(#dh-gold)" stroke="#4A0710" stroke-width="1"/>
+      <ellipse cx="40" cy="-13.5" rx="1.5" ry="3.4" fill="#1A0E08"/>
+      <path d="M58 -12 C64 -16 72 -14 76 -10" fill="none" stroke="#6E0910" stroke-width="1.2" stroke-linecap="round"/>
+      <path d="M-4 -2 C8 -4 18 -2 26 4" fill="none" stroke="#6E0910" stroke-opacity=".6" stroke-width="1.2" stroke-linecap="round"/>
+      <g fill="none" stroke="url(#dh-gold)" stroke-width="1.8" stroke-linecap="round">
+        <path d="M80 -4 C70 -22 56 -34 34 -38 C22 -40 14 -46 10 -50"/>
+        <path d="M80 2 C68 18 52 30 30 34 C18 36 10 42 6 48"/>
+      </g>
+    </svg>
+  </div>
+</div>
+
+<header class="nav glass">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Restaurante Chino Hong Kong, inicio">
+      <span class="seal hanzi" aria-hidden="true">香港</span>
+      <span><b>Hong Kong</b><small>Restaurante chino · Móstoles</small></span>
+    </a>
+    <nav aria-label="Secciones">
+      <a href="#reservar">Reservar</a>
+      <a href="#carta">Carta</a>
+      <a href="#local">El local</a>
+      <a href="#contacto">Cómo llegar</a>
+    </nav>
+    <a class="btn" href="tel:+34916460438"><i class="ph ph-phone" aria-hidden="true"></i><span class="num">916 46 04 38</span></a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="scene">
+    <div class="scene-bg" aria-hidden="true">
+      <div class="scene-pin">
+        <div class="wrap">
+          <div class="stage"><div class="mover"><svg id="table" viewBox="-190 -190 380 380"></svg></div></div>
+        </div>
+      </div>
+    </div>
+
+    <section class="hero" aria-labelledby="h1">
+      <div class="wrap">
+        <div class="hero-copy">
+          <h1 id="h1">Tu mesa redonda, <em>lista.</em></h1>
+          <p class="lede">El chino de toda la vida en Móstoles, recién reformado. Dinos cuántos sois y cuándo; lo confirmamos por teléfono.</p>
+          <div class="guests">
+            <div class="stepper glass" role="group" aria-label="Número de comensales">
+              <button type="button" data-step="-1" aria-label="Quitar un comensal"><i class="ph ph-minus" aria-hidden="true"></i></button>
+              <output id="guestsOut" aria-live="polite" class="num">4 personas</output>
+              <button type="button" data-step="1" aria-label="Añadir un comensal"><i class="ph ph-plus" aria-hidden="true"></i></button>
+            </div>
+            <a class="btn" href="#reservar">Reservar mesa</a>
+          </div>
+          <p class="hero-note"><i class="ph ph-phone-call ico" aria-hidden="true"></i><span data-copy="hero">Prepara tu reserva y confírmala con una llamada.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="reservar" aria-labelledby="h-res">
+      <div class="wrap">
+        <h2 id="h-res" class="emerge">Reserva en un minuto.</h2>
+        <p class="sub emerge" data-copy="sub">Elige día y hora, y llámanos para confirmar tu mesa.</p>
+
+        <form class="book" id="bookForm" novalidate>
+          <div class="panel glass emerge">
+            <fieldset>
+              <legend>¿Qué día? <span id="monthLabel"></span></legend>
+              <div class="days" id="days" role="group" aria-label="Día de la reserva"></div>
+            </fieldset>
+            <fieldset>
+              <legend>¿A qué hora?</legend>
+              <h3><i class="ph ph-sun" aria-hidden="true"></i>Comida</h3>
+              <div class="slots" id="slotsLunch" role="group" aria-label="Horas de comida"></div>
+              <h3><i class="ph ph-moon" aria-hidden="true"></i>Cena</h3>
+              <div class="slots" id="slotsDinner" role="group" aria-label="Horas de cena"></div>
+            </fieldset>
+            <fieldset>
+              <legend>Tus datos</legend>
+              <div class="two">
+                <div class="field">
+                  <label for="fName">Nombre</label>
+                  <input id="fName" name="nombre" autocomplete="name" required aria-describedby="eName">
+                  <p class="err" id="eName"><i class="ph ph-warning-circle" aria-hidden="true"></i>Escribe tu nombre para la reserva.</p>
+                </div>
+                <div class="field">
+                  <label for="fPhone">Teléfono</label>
+                  <input id="fPhone" name="telefono" type="tel" inputmode="tel" autocomplete="tel" placeholder="600 123 456" required aria-describedby="ePhone">
+                  <p class="err" id="ePhone"><i class="ph ph-warning-circle" aria-hidden="true"></i>Necesitamos un teléfono de 9 cifras para confirmar.</p>
+                </div>
+              </div>
+              <div class="field">
+                <label for="fNotes">Comentarios <span>(opcional)</span></label>
+                <textarea id="fNotes" name="comentarios" placeholder="Una celebración, una trona, alergias..."></textarea>
+              </div>
+              <label class="check"><input type="checkbox" id="fConsent" required> <span>Acepto que el restaurante use estos datos solo para gestionar mi reserva.</span></label>
+              <p class="err" id="eConsent"><i class="ph ph-warning-circle" aria-hidden="true"></i>Marca la casilla para continuar.</p>
+            </fieldset>
+          </div>
+
+          <aside class="ticket panel glass emerge" aria-labelledby="h-ticket">
+            <div id="ticketBody">
+              <h3 id="h-ticket" class="sr">Resumen de tu reserva</h3>
+              <div class="count"><b class="num" id="sCount">4</b><span id="sCountLabel">personas</span></div>
+              <dl>
+                <div><dt>Día</dt><dd id="sDay" class="empty">Elige un día</dd></div>
+                <div><dt>Hora</dt><dd id="sTime" class="empty num">Elige una hora</dd></div>
+              </dl>
+              <button class="btn" type="submit" id="submitBtn"><span class="spin" aria-hidden="true"></span><span class="lbl">Preparar reserva</span></button>
+              <p class="form-err" id="formErr" role="alert"><i class="ph ph-warning-circle" aria-hidden="true"></i><span></span></p>
+              <p class="fine" data-copy="fine">Sin pago ni registro. La mesa queda confirmada al llamar.</p>
+            </div>
+            <div class="done" id="done" role="status" aria-live="polite" tabindex="-1">
+              <i class="ph-fill ph-check-circle" aria-hidden="true"></i>
+              <h3 id="doneTitle">Ya casi está</h3>
+              <p id="doneText"></p>
+              <div class="actions">
+                <a class="btn" href="tel:+34916460438"><i class="ph ph-phone" aria-hidden="true"></i>Llamar</a>
+                <button class="btn btn--glass glass" type="button" id="againBtn">Otra reserva</button>
+              </div>
+            </div>
+          </aside>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <section class="block" id="carta" aria-labelledby="h-carta">
+    <div class="wrap">
+      <h2 id="h-carta" class="emerge">Los de siempre.</h2>
+      <p class="sub emerge">Los platos que más nombran quienes nos visitan en Google Maps.</p>
+    </div>
+    <div class="rail">
+      <div class="track" id="track">
+        <figure class="dish"><svg viewBox="-60 -60 120 120" aria-hidden="true"><g class="spinner"><use href="#d-rice"/></g></svg><figcaption class="glass glass--red"><b>Arroz tres delicias</b><span class="hanzi" lang="zh-Hant">揚州炒飯</span></figcaption></figure>
+        <figure class="dish"><svg viewBox="-60 -60 120 120" aria-hidden="true"><g class="spinner"><use href="#d-chicken"/></g></svg><figcaption class="glass glass--red"><b>Pollo al limón</b><span class="hanzi" lang="zh-Hant">檸檬雞</span></figcaption></figure>
+        <figure class="dish"><svg viewBox="-60 -60 120 120" aria-hidden="true"><g class="spinner"><use href="#d-rolls"/></g></svg><figcaption class="glass glass--red"><b>Rollitos de primavera</b><span class="hanzi" lang="zh-Hant">春捲</span></figcaption></figure>
+        <figure class="dish"><svg viewBox="-60 -60 120 120" aria-hidden="true"><g class="spinner"><use href="#d-noodles"/></g></svg><figcaption class="glass glass--red"><b>Tallarines</b><span class="hanzi" lang="zh-Hant">炒麵</span></figcaption></figure>
+        <figure class="dish"><svg viewBox="-60 -60 120 120" aria-hidden="true"><g class="spinner"><use href="#d-kubak"/></g></svg><figcaption class="glass glass--red"><b>Kubak</b><span class="hanzi" lang="zh-Hant">鍋巴</span></figcaption></figure>
+        <figure class="dish"><svg viewBox="-60 -60 120 120" aria-hidden="true"><g class="spinner"><use href="#d-beef"/></g></svg><figcaption class="glass glass--red"><b>Ternera</b><span class="hanzi" lang="zh-Hant">牛肉</span></figcaption></figure>
+        <figure class="dish"><svg viewBox="-60 -60 120 120" aria-hidden="true"><g class="spinner"><use href="#d-prawns"/></g></svg><figcaption class="glass glass--red"><b>Gambas</b><span class="hanzi" lang="zh-Hant">蝦</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="wrap">
+      <p class="carta-foot"><i class="ph ph-book-open" aria-hidden="true"></i>Ilustraciones orientativas. La carta completa, en el local o por teléfono.</p>
+    </div>
+  </section>
+
+  <section class="block" id="local" aria-labelledby="h-local">
+    <div class="wrap local">
+      <div>
+        <h2 id="h-local" class="emerge">Salón nuevo. El trato de siempre.</h2>
+        <p class="sub emerge">Recién reformado, con mesas redondas pensadas para comer en familia y celebrar.</p>
+        <div class="rating glass emerge">
+          <b class="num">4,2</b>
+          <div>
+            <span class="stars" aria-hidden="true"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph ph-star"></i></span>
+            <small>596 opiniones en Google Maps</small>
+          </div>
+        </div>
+        <ul class="services emerge" aria-label="Servicios">
+          <li><i class="ph ph-fork-knife ico" aria-hidden="true"></i>En el local</li>
+          <li><i class="ph ph-bag ico" aria-hidden="true"></i>Para llevar</li>
+          <li><i class="ph ph-moped ico" aria-hidden="true"></i>A domicilio</li>
+        </ul>
+      </div>
+      <div class="frames emerge">
+        <!-- Reemplazar por foto propia del salón (4:5, mín. 1200×1500) -->
+        <figure class="frame"><figcaption class="glass"><i class="ph ph-image" aria-hidden="true"></i>Foto pendiente</figcaption></figure>
+        <!-- Reemplazar por foto propia de un plato (3:4, mín. 900×1200) -->
+        <figure class="frame"><figcaption class="glass"><i class="ph ph-image" aria-hidden="true"></i>Foto pendiente</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="contacto" aria-labelledby="h-visit">
+    <div class="wrap">
+      <div class="ring" aria-hidden="true"></div>
+      <div class="visit glass emerge">
+        <div class="visit-info">
+          <h2 id="h-visit" style="font-size:clamp(32px,3.6vw,48px)">Ven a vernos.</h2>
+          <a class="phone-big num" href="tel:+34916460438" aria-label="Llamar al 916 46 04 38">916 46 04 38</a>
+          <div class="rows">
+            <div class="row"><i class="ph ph-map-pin ico" aria-hidden="true"></i><div><b>Av. Carlos V, 41</b><span>Móstoles, Madrid</span></div></div>
+            <div class="row"><i class="ph ph-clock ico" aria-hidden="true"></i><div><b>Mediodía y noche</b><span>Llama para confirmar el horario del día.</span></div></div>
+            <div class="row"><i class="ph ph-moped ico" aria-hidden="true"></i><div><b>Para llevar y a domicilio</b><span>Haz tu pedido por teléfono.</span></div></div>
+          </div>
+          <div class="ctas">
+            <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=Restaurante%20Chino%20Hong%20Kong%2C%20Av.%20Carlos%20V%2041%2C%20M%C3%B3stoles" target="_blank" rel="noopener"><i class="ph ph-navigation-arrow" aria-hidden="true"></i>Cómo llegar</a>
+            <a class="btn btn--glass glass" href="#reservar">Reservar mesa</a>
+          </div>
+        </div>
+        <div class="map" id="map">
+          <button class="btn btn--glass glass" type="button" id="loadMap"><i class="ph ph-map-trifold" aria-hidden="true"></i>Ver el mapa aquí</button>
+          <p>Al cargarlo se conecta con Google Maps. También puedes <a href="https://www.google.com/maps/search/?api=1&query=Restaurante%20Chino%20Hong%20Kong%20Av.%20Carlos%20V%2041%20M%C3%B3stoles" target="_blank" rel="noopener">abrirlo en Google Maps</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Restaurante Chino Hong Kong · Av. Carlos V, 41, Móstoles</span>
+    <span>© 2026</span>
+  </div>
+</footer>
+
+<div class="bar glass" id="bar">
+  <a class="btn btn--glass" href="tel:+34916460438"><i class="ph ph-phone" aria-hidden="true"></i>Llamar</a>
+  <a class="btn" href="#reservar">Reservar mesa</a>
+</div>
+
+<script>
+(() => {
+  // Configuración: pega aquí la URL de la aplicación web de Google Apps Script (ver google-apps-script.gs).
+  // La misma URL va en panel.html. Cada reserva se guarda en la hoja de Google y llega por email al restaurante.
+  const CONFIG = { endpoint: "https://script.google.com/macros/s/AKfycbzY5Wk-09horHJNAHrFOJefqdI5U4AHMc7w51y8yh7epnnu1dCYdL-R4ag5yay3iSlO/exec" };
+  const PHONE = "916 46 04 38";
+  const MIN = 1, MAX = 12;
+  const NS = "http://www.w3.org/2000/svg";
+  const state = { guests: 4, day: null, time: null };
+  const CTA = CONFIG.endpoint ? "Solicitar reserva" : "Preparar reserva";
+  if (CONFIG.endpoint) {
+    const copy = {
+      hero: "Te llamamos para confirmar. Para llevar y a domicilio, llama.",
+      sub: "Elige día y hora. El restaurante te llamará para confirmar tu mesa.",
+      fine: "Sin pago ni registro. Te llamamos para confirmar."
+    };
+    document.querySelectorAll("[data-copy]").forEach(n => n.textContent = copy[n.dataset.copy]);
+  }
+  document.querySelector("#submitBtn .lbl").textContent = CTA;
+
+  /* ---------- Mesa redonda vista desde arriba ---------- */
+  const el = (tag, attrs = {}, parent) => {
+    const n = document.createElementNS(NS, tag);
+    for (const k in attrs) n.setAttribute(k, attrs[k]);
+    if (parent) parent.appendChild(n);
+    return n;
+  };
+  const radiusFor = g => 96 + Math.max(0, g - 4) * 4.5;
+  const svg = document.getElementById("table");
+  const use = (id, parent) => el("use", { href: "#" + id }, parent);
+  const T = {};
+  T.shadow = el("ellipse", { class: "table-shadow", cx: 8, cy: 20, rx: 150, ry: 150, fill: "#4A2E20" }, svg);
+  const chairsG = el("g", {}, svg);
+  T.underlay = el("circle", { class: "underlay", r: 104, fill: "url(#t-underlay)" }, svg);
+  T.cloth = el("circle", { class: "cloth", r: 98, fill: "url(#t-cloth)" }, svg);
+  T.hem = el("circle", { class: "cloth", r: 95, fill: "none", stroke: "rgba(74,46,32,.08)", "stroke-width": 2.5 }, svg);
+  const settingsG = el("g", {}, svg);
+  use("t-susan", el("g", { class: "susan" }, svg));
+  T.chairs = []; T.settings = [];
+  for (let i = 0; i < MAX; i++) {
+    const c = el("g", { class: "chair is-off" }, chairsG); use("t-chair", c); T.chairs.push(c);
+    const s = el("g", { class: "setting is-off" }, settingsG); use("t-setting", s); T.settings.push(s);
+  }
+  function layoutTable(g) {
+    const R = radiusFor(g);
+    T.cloth.setAttribute("r", R); T.hem.setAttribute("r", R - 3); T.underlay.setAttribute("r", R + 7);
+    T.shadow.setAttribute("rx", R + 52); T.shadow.setAttribute("ry", R + 52);
+    T.chairs.forEach((c, i) => {
+      const on = i < g, a = on ? (i / g) * 360 : (i / MAX) * 360;
+      c.style.transform = `rotate(${a}deg) translateY(${-(R + (on ? 30 : 6))}px)`;
+      c.classList.toggle("is-off", !on);
+      T.settings[i].style.transform = `rotate(${a}deg) translateY(${-(R - 28)}px)`;
+      T.settings[i].classList.toggle("is-off", !on);
+    });
+  }
+
+  /* ---------- Comensales ---------- */
+  const out = document.getElementById("guestsOut");
+  const sCount = document.getElementById("sCount"), sCountLabel = document.getElementById("sCountLabel");
+  const label = g => g === 1 ? "1 persona" : `${g} personas`;
+  function setGuests(g) {
+    state.guests = Math.min(MAX, Math.max(MIN, g));
+    out.textContent = label(state.guests);
+    sCount.textContent = state.guests; sCountLabel.textContent = state.guests === 1 ? "persona" : "personas";
+    document.querySelectorAll("[data-step='-1']").forEach(b => b.disabled = state.guests <= MIN);
+    document.querySelectorAll("[data-step='1']").forEach(b => b.disabled = state.guests >= MAX);
+    layoutTable(state.guests);
+  }
+  document.querySelectorAll("[data-step]").forEach(b => b.addEventListener("click", () => setGuests(state.guests + Number(b.dataset.step))));
+  // Las sillas llegan a la mesa al abrir la página
+  setGuests(1);
+  requestAnimationFrame(() => setTimeout(() => setGuests(4), matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 450));
+
+  /* ---------- Días ---------- */
+  const daysEl = document.getElementById("days");
+  const monthLabel = document.getElementById("monthLabel");
+  const fmtWk = new Intl.DateTimeFormat("es-ES", { weekday: "short" });
+  const fmtMonth = new Intl.DateTimeFormat("es-ES", { month: "long" });
+  const fmtLong = new Intl.DateTimeFormat("es-ES", { weekday: "long", day: "numeric", month: "long" });
+  const today = new Date(); today.setHours(0, 0, 0, 0);
+  const days = Array.from({ length: 21 }, (_, i) => { const d = new Date(today); d.setDate(d.getDate() + i); return d; });
+  days.forEach((d, i) => {
+    const b = document.createElement("button");
+    b.type = "button"; b.className = "tile"; b.setAttribute("aria-pressed", "false");
+    const name = i === 0 ? "hoy" : i === 1 ? "mañana" : fmtWk.format(d).replace(".", "");
+    b.innerHTML = `<small>${name}</small><b class="num">${d.getDate()}</b>`;
+    b.setAttribute("aria-label", fmtLong.format(d));
+    b.addEventListener("click", () => selectDay(i, b));
+    daysEl.appendChild(b);
+  });
+  const updateMonth = () => {
+    const first = Math.round(daysEl.scrollLeft / 82);
+    monthLabel.textContent = fmtMonth.format(days[Math.min(days.length - 1, Math.max(0, first))]);
+  };
+  daysEl.addEventListener("scroll", updateMonth, { passive: true });
+  updateMonth();
+
+  /* ---------- Horas ---------- */
+  const LUNCH = ["13:00", "13:30", "14:00", "14:30", "15:00", "15:30"];
+  const DINNER = ["20:30", "21:00", "21:30", "22:00", "22:30", "23:00"];
+  const slotButtons = [];
+  function buildSlots(list, host) {
+    list.forEach(t => {
+      const b = document.createElement("button");
+      b.type = "button"; b.className = "tile num"; b.textContent = t; b.dataset.time = t;
+      b.setAttribute("aria-pressed", "false");
+      b.addEventListener("click", () => selectTime(b));
+      host.appendChild(b); slotButtons.push(b);
+    });
+  }
+  buildSlots(LUNCH, document.getElementById("slotsLunch"));
+  buildSlots(DINNER, document.getElementById("slotsDinner"));
+
+  const sDay = document.getElementById("sDay"), sTime = document.getElementById("sTime");
+  const press = (group, btn) => group.forEach(b => b.setAttribute("aria-pressed", String(b === btn)));
+  function resetTime() { state.time = null; press(slotButtons, null); sTime.textContent = "Elige una hora"; sTime.classList.add("empty"); }
+  function selectDay(i, btn) {
+    state.day = days[i];
+    press([...daysEl.children], btn);
+    sDay.textContent = fmtLong.format(state.day); sDay.classList.remove("empty");
+    // Hoy no se pueden elegir horas que ya han pasado (con 30 min de margen)
+    const now = new Date();
+    slotButtons.forEach(b => {
+      const [h, m] = b.dataset.time.split(":").map(Number);
+      const slot = new Date(state.day); slot.setHours(h, m, 0, 0);
+      const past = slot.getTime() - now.getTime() < 30 * 60 * 1000;
+      b.setAttribute("aria-disabled", String(past));
+      if (past && state.time === b.dataset.time) resetTime();
+    });
+    clearFormErr();
+  }
+  function selectTime(btn) {
+    if (btn.getAttribute("aria-disabled") === "true") return;
+    state.time = btn.dataset.time;
+    press(slotButtons, btn);
+    sTime.textContent = state.time; sTime.classList.remove("empty");
+    clearFormErr();
+  }
+
+  /* ---------- Envío ---------- */
+  const form = document.getElementById("bookForm");
+  const fName = document.getElementById("fName"), fPhone = document.getElementById("fPhone"), fNotes = document.getElementById("fNotes"), fConsent = document.getElementById("fConsent");
+  const formErr = document.getElementById("formErr"), submitBtn = document.getElementById("submitBtn"), eConsent = document.getElementById("eConsent");
+  const showErr = (input, errId, on) => { input.setAttribute("aria-invalid", String(on)); document.getElementById(errId).classList.toggle("on", on); };
+  const phoneOk = v => /^(\+?34)?[6789]\d{8}$/.test(v.replace(/[\s.-]/g, ""));
+  function clearFormErr() { formErr.classList.remove("on"); }
+  function setFormErr(msg) { formErr.querySelector("span").textContent = msg; formErr.classList.add("on"); }
+  fName.addEventListener("input", () => fName.value.trim() && showErr(fName, "eName", false));
+  fPhone.addEventListener("input", () => phoneOk(fPhone.value) && showErr(fPhone, "ePhone", false));
+  fConsent.addEventListener("change", () => fConsent.checked && eConsent.classList.remove("on"));
+
+  form.addEventListener("submit", async e => {
+    e.preventDefault();
+    clearFormErr();
+    const okName = !!fName.value.trim(), okPhone = phoneOk(fPhone.value);
+    showErr(fName, "eName", !okName); showErr(fPhone, "ePhone", !okPhone);
+    eConsent.classList.toggle("on", !fConsent.checked);
+    if (!state.day || !state.time) {
+      setFormErr(!state.day ? "Elige el día de tu reserva." : "Elige la hora de tu reserva.");
+      document.getElementById(!state.day ? "days" : "slotsLunch").scrollIntoView({ block: "center", behavior: "smooth" });
+      return;
+    }
+    if (!okName) return fName.focus();
+    if (!okPhone) return fPhone.focus();
+    if (!fConsent.checked) return fConsent.focus();
+
+    const payload = {
+      comensales: state.guests, dia: `${state.day.getFullYear()}-${String(state.day.getMonth() + 1).padStart(2, "0")}-${String(state.day.getDate()).padStart(2, "0")}`, hora: state.time,
+      nombre: fName.value.trim(), telefono: fPhone.value.trim(), comentarios: fNotes.value.trim()
+    };
+    const summary = `${label(state.guests)}, ${fmtLong.format(state.day)} a las ${state.time}`;
+    let sent = false;
+    if (CONFIG.endpoint) {
+      submitBtn.disabled = true; submitBtn.classList.add("loading");
+      submitBtn.querySelector(".lbl").textContent = "Enviando...";
+      try {
+        // text/plain evita la comprobación previa (CORS) que Google Apps Script no admite
+        const r = await fetch(CONFIG.endpoint, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify({ action: "reservar", ...payload }) });
+        const res = await r.json().catch(() => ({}));
+        if (!r.ok || !res.ok) throw new Error(res.error || r.status);
+        sent = true;
+      } catch {
+        submitBtn.disabled = false; submitBtn.classList.remove("loading");
+        submitBtn.querySelector(".lbl").textContent = CTA;
+        setFormErr(`No hemos podido enviar la solicitud. Inténtalo de nuevo o llama al ${PHONE}.`);
+        return;
+      }
+    }
+    document.getElementById("doneTitle").textContent = sent ? "Solicitud enviada" : "Ya casi está";
+    document.getElementById("doneText").textContent = sent
+      ? `${summary}. Te llamaremos al ${payload.telefono} para confirmar tu mesa.`
+      : `${summary}. Llama al ${PHONE} y dinos estos datos para confirmar tu mesa.`;
+    document.getElementById("ticketBody").hidden = true;
+    const done = document.getElementById("done");
+    done.classList.add("on"); done.focus({ preventScroll: true });
+  });
+
+  document.getElementById("againBtn").addEventListener("click", () => {
+    form.reset(); state.day = null;
+    press([...daysEl.children], null); resetTime();
+    sDay.textContent = "Elige un día"; sDay.classList.add("empty");
+    submitBtn.disabled = false; submitBtn.classList.remove("loading");
+    submitBtn.querySelector(".lbl").textContent = CTA;
+    document.getElementById("done").classList.remove("on");
+    document.getElementById("ticketBody").hidden = false;
+  });
+
+  /* ---------- Carta: recorrido horizontal al bajar ---------- */
+  const track = document.getElementById("track");
+  const setShift = () => {
+    const pad = parseFloat(getComputedStyle(document.querySelector("#carta .wrap")).paddingLeft) || 0;
+    track.style.setProperty("--shift", Math.max(0, track.scrollWidth - innerWidth + pad * 2));
+  };
+  setShift();
+  addEventListener("resize", setShift, { passive: true });
+
+  /* ---------- Dragón: un camino serpenteante por el lado derecho de toda la página ---------- */
+  const dragon = document.getElementById("dragon"), dBody = document.getElementById("dragonBody"), dHead = document.getElementById("dragonHead");
+  function buildDragon() {
+    dragon.style.height = "0px";
+    const W = document.documentElement.clientWidth, H = document.documentElement.scrollHeight;
+    dragon.style.height = H + "px";
+    dBody.setAttribute("viewBox", `0 0 ${W} ${H}`);
+    const mobile = W < 760;
+    const wide = W >= 1440, k = mobile ? .5 : wide ? 1 : .72, cx = mobile ? W - 20 : wide ? W - 76 : W - 44, amp = mobile ? 4 : wide ? 26 : 10;
+    dBody.querySelectorAll("[data-w]").forEach(p => { p.setAttribute("stroke-width", (+p.dataset.w * k).toFixed(1)); if (p.dataset.dx) p.setAttribute("transform", `translate(${(+p.dataset.dx * k).toFixed(1)} 0)`); });
+    const step = mobile ? 200 : 260, pts = [];
+    for (let y = 70, i = 0; y <= H - 140; y += step, i++) pts.push([cx + amp * Math.sin(i * 1.6), y]);
+    pts.push([cx, H - 120]);
+    // Catmull-Rom a curvas Bézier para un cuerpo continuo
+    let d = `M${pts[0][0].toFixed(1)} ${pts[0][1].toFixed(1)}`;
+    for (let i = 0; i < pts.length - 1; i++) {
+      const p0 = pts[i - 1] || pts[i], p1 = pts[i], p2 = pts[i + 1], p3 = pts[i + 2] || p2;
+      const c1 = [p1[0] + (p2[0] - p0[0]) / 6, p1[1] + (p2[1] - p0[1]) / 6];
+      const c2 = [p2[0] - (p3[0] - p1[0]) / 6, p2[1] - (p3[1] - p1[1]) / 6];
+      d += ` C${c1[0].toFixed(1)} ${c1[1].toFixed(1)} ${c2[0].toFixed(1)} ${c2[1].toFixed(1)} ${p2[0].toFixed(1)} ${p2[1].toFixed(1)}`;
+    }
+    dBody.querySelectorAll(".dg-path").forEach(p => p.setAttribute("d", d));
+    const len = dBody.querySelector(".dg-path").getTotalLength();
+    dragon.style.setProperty("--len", len.toFixed(0));
+    dHead.style.offsetPath = `path("${d}")`;
+    const ref = dBody.querySelector(".dg-path");
+    let fins = "";
+    const at = l => { const a = ref.getPointAtLength(Math.max(0, Math.min(len, l))), b = ref.getPointAtLength(Math.max(0, Math.min(len, l + 1))); const tx = b.x - a.x, ty = b.y - a.y, m = Math.hypot(tx, ty) || 1; return { x: a.x, y: a.y, tx: tx / m, ty: ty / m, nx: -ty / m, ny: tx / m }; };
+    for (let l = 40; l < len - 60; l += 30 * k) {
+      const p = at(l), q = at(l + 22 * k), r = (18 + 6 * Math.sin(l / 40)) * k, e = 17 * k;
+      const b1 = [p.x + p.nx * e, p.y + p.ny * e], b2 = [q.x + q.nx * e, q.y + q.ny * e], tip = [p.x + p.nx * (e + r) + p.tx * 18 * k, p.y + p.ny * (e + r) + p.ty * 18 * k];
+      fins += `<path d="M${b1[0].toFixed(1)} ${b1[1].toFixed(1)} Q${(tip[0] - p.tx * 10).toFixed(1)} ${(tip[1] - p.ty * 10).toFixed(1)} ${tip[0].toFixed(1)} ${tip[1].toFixed(1)} L${b2[0].toFixed(1)} ${b2[1].toFixed(1)}Z" fill="#D9A441" stroke="#9C6E2A" stroke-width=".8"/>`;
+    }
+    [.12, .34, .58, .82].forEach(f => {
+      const p = at(len * f), sd = -k, x0 = p.x + p.nx * 16 * sd, y0 = p.y + p.ny * 16 * sd;
+      const kx = p.x + p.nx * 34 * sd - p.tx * 10 * k, ky = p.y + p.ny * 34 * sd - p.ty * 10 * k, fx = kx + p.tx * 16 * k, fy = ky + p.ty * 16 * k;
+      fins += `<path d="M${x0.toFixed(1)} ${y0.toFixed(1)} Q${kx.toFixed(1)} ${ky.toFixed(1)} ${fx.toFixed(1)} ${fy.toFixed(1)}" fill="none" stroke="#4A0710" stroke-width="${(13 * k).toFixed(1)}" stroke-linecap="round"/>`;
+      fins += `<path d="M${x0.toFixed(1)} ${y0.toFixed(1)} Q${kx.toFixed(1)} ${ky.toFixed(1)} ${fx.toFixed(1)} ${fy.toFixed(1)}" fill="none" stroke="#A5121C" stroke-width="${(9 * k).toFixed(1)}" stroke-linecap="round"/>`;
+      [-1, 0, 1].forEach(c => {
+        const cx2 = fx + p.tx * 9 * k + p.nx * c * 6 * sd, cy2 = fy + p.ty * 9 * k + p.ny * c * 6 * sd;
+        fins += `<path d="M${fx.toFixed(1)} ${fy.toFixed(1)} L${cx2.toFixed(1)} ${cy2.toFixed(1)}" stroke="#D9A441" stroke-width="${(3.2 * k).toFixed(1)}" stroke-linecap="round"/>`;
+      });
+    });
+    document.getElementById("dragonFins").innerHTML = fins;
+    // Cola: penacho dorado en el inicio del cuerpo
+    const [tx, ty] = pts[0];
+    document.getElementById("dragonTail").innerHTML = `<path d="M${tx - 14} ${ty + 6} q-22 -30 -8 -62 q6 22 16 26 q-2 -26 14 -38 q0 30 -4 52 q10 -10 22 -12 q-10 14 -16 36Z" fill="#D9A441" stroke="#9C6E2A" stroke-width=".8" transform="translate(${tx} ${ty}) scale(${k}) translate(${-tx} ${-ty})"/>`;
+  }
+  buildDragon();
+  addEventListener("load", buildDragon);
+  addEventListener("resize", () => { clearTimeout(buildDragon.t); buildDragon.t = setTimeout(buildDragon, 150); }, { passive: true });
+
+  /* ---------- Mapa bajo demanda ---------- */
+  document.getElementById("loadMap").addEventListener("click", () => {
+    const map = document.getElementById("map");
+    map.innerHTML = '<iframe title="Mapa: Restaurante Chino Hong Kong, Av. Carlos V 41, Móstoles" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Restaurante%20Chino%20Hong%20Kong%2C%20Av.%20Carlos%20V%2041%2C%20M%C3%B3stoles&z=16&output=embed"></iframe>';
+    map.classList.add("loaded");
+  });
+
+  /* ---------- Barra móvil ---------- */
+  const bar = document.getElementById("bar");
+  const hideOn = new Set();
+  const barIo = new IntersectionObserver(entries => {
+    entries.forEach(en => en.isIntersecting ? hideOn.add(en.target) : hideOn.delete(en.target));
+    bar.classList.toggle("hide", hideOn.size > 0);
+  }, { threshold: 0.15 });
+  barIo.observe(document.getElementById("bookForm"));
+  barIo.observe(document.querySelector(".hero"));
+})();
+</script>
+</body>
+</html>
